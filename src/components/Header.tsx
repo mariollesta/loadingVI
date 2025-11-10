@@ -12,7 +12,7 @@ export const Header = () => {
 
                 <nav className="flex items-center gap-4 sm:gap-6">
                     <Link
-                        to="/embed"
+                        to="/embed-config"
                         className="flex items-center gap-2 text-sm sm:text-base text-white hover:text-[var(--color-gold)] transition-colors"
                     >
                         <span className="hidden sm:inline">Streamers</span>
