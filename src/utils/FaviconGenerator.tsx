@@ -9,7 +9,8 @@ export const FaviconGenerator = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 borderRadius: '80px',
-                padding: '60px',
+                paddingLeft: '60px',
+                paddingRight: '40px',
             }}
         >
             <div style={{
