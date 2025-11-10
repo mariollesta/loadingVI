@@ -5,7 +5,7 @@ import Check from '@icons/Check';
 
 const BASE_URL = import.meta.env.VITE_BASE_URL; 
 
-export const EmbedConfig = () => {
+export const EmbedConfigPage = () => {
     const [width, setWidth] = useState(400);
     const [height, setHeight] = useState(150);
     const [isTransparent, setIsTransparent] = useState(true);

@@ -1,9 +1,17 @@
-import { EmbedConfig } from '@/components/EmbedConfig'
+import { Countdown } from '@components/Countdown'
 
 export const EmbedPage = () => {
+    const urlParams = new URLSearchParams(window.location.search)
+    const isTransparent = urlParams.get('transparent') === '1'
+
     return (
-        <div className="flex-1 flex flex-col items-center justify-center px-4 gap-8 md:gap-16">
-            <EmbedConfig />
+        <div 
+        className="min-h-screen flex items-center justify-center p-4"
+        style={{ 
+            background: isTransparent ? 'transparent' : '#171521'
+        }}
+        >
+            <Countdown />
         </div>
     )
 }
