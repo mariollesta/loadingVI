@@ -29,7 +29,10 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@config/*": ["src/config/*"]
+      "@config/*": ["src/config/*"],
+      "@icons/*": ["src/icons/*"],
+      "@utils/*": ["src/utils/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
   "include": ["src"]
