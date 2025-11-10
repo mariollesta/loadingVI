@@ -1,4 +1,4 @@
-import { Countdown } from '@components/Countdown'
+import { CountdownEmbed } from '@components/CountdownEmbed'
 
 export const EmbedPage = () => {
     const urlParams = new URLSearchParams(window.location.search)
@@ -11,7 +11,7 @@ export const EmbedPage = () => {
             background: isTransparent ? 'transparent' : '#171521'
         }}
         >
-            <Countdown />
+            <CountdownEmbed />
         </div>
     )
 }

@@ -6,8 +6,8 @@ import Check from '@icons/Check';
 const BASE_URL = import.meta.env.VITE_BASE_URL; 
 
 export const EmbedConfigPage = () => {
-    const [width, setWidth] = useState(400);
-    const [height, setHeight] = useState(150);
+    const [width, setWidth] = useState(600);
+    const [height, setHeight] = useState(180);
     const [isTransparent, setIsTransparent] = useState(true);
     const [didCopy, setDidCopy] = useState(false);
 
