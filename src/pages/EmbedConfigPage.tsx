@@ -6,8 +6,8 @@ import Check from '@icons/Check';
 const BASE_URL = import.meta.env.VITE_BASE_URL; 
 
 export const EmbedConfigPage = () => {
-    const [width, setWidth] = useState(600);
-    const [height, setHeight] = useState(180);
+    const [width, setWidth] = useState(800);
+    const [height, setHeight] = useState(250);
     const [isTransparent, setIsTransparent] = useState(true);
     const [didCopy, setDidCopy] = useState(false);
 
@@ -30,17 +30,13 @@ export const EmbedConfigPage = () => {
 
                 <h2 className="text-2xl font-bold mb-4">Vista previa</h2>
                 <div 
-                    className="flex items-center justify-center p-4 rounded-lg mb-8"
-                    style={{ 
-                        backgroundImage: 'linear-gradient(45deg, #404040 25%, transparent 25%), linear-gradient(-45deg, #404040 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #404040 75%), linear-gradient(-45deg, transparent 75%, #404040 75%)', 
-                        backgroundSize: '20px 20px', 
-                        backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px' 
-                    }}
+                    className={`flex items-center justify-center p-4 rounded-lg mb-8 ${isTransparent ? 'bg-gray-700' : 'bg-gray-800'}`}
                 >
                     <iframe
                         src={embedUrl}
                         width={width}
                         height={height}
+                        style={{ maxWidth: '100%' }}
                     />
                 </div>
 
