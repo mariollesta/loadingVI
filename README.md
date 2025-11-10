@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# loadingVI - Contador Regresivo de GTA VI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portada de loadingVI](https://loadingvi.com/og-image.webp)
 
-Currently, two official plugins are available:
+**[Visita la web en vivo 🚀](https://loadingvi.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`loadingVI` es un contador regresivo *fan-made* dedicado al esperado lanzamiento de **Grand Theft Auto VI**. El proyecto nace de la emoción de la comunidad y está construido con un stack de tecnologías web modernas, optimizado para compartir en redes sociales y con herramientas para streamers.
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Características (Features)
 
-## Expanding the ESLint configuration
+* **⏳ Contador Preciso:** Muestra los días, horas, minutos y segundos restantes.
+* **📊 Barra de Progreso:** Una barra de progreso animada que visualiza el tiempo transcurrido desde la salida de GTA V.
+* **📺 Herramienta para Streamers:** Una página de configuración que genera un `<iframe>` para que los streamers puedan incrustar el contador en sus directos de OBS, Twitch, etc.
+* **📲 Botones de Compartir:** Funcionalidad para compartir en X/Twitter, Facebook, WhatsApp y copiar el enlace.
+* **📈 Contador de Visitas:** Un contador de visitas en vivo usando Vercel KV.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Stack Tecnológico
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Este proyecto está construido con:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Framework:** [React](https://reactjs.org/)
+* **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
+* **Bundler:** [Vite](https://vitejs.dev/)
+* **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
+* **Routing:** [React Router](https://reactrouter.com/)
+* **SEO:** [React Helmet Async](https://github.com/staylor/react-helmet-async)
+* **Base de Datos (Contador):** [Vercel KV](https://vercel.com/storage/kv)
+* **Despliegue:** [Vercel](https://vercel.com/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Cómo Ejecutarlo en Local
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/mariollesta/loadingVI.git](https://github.com/mariollesta/loadingVI.git)
+    cd loadingVI
+    ```
+
+2.  **Instalar dependencias:**
+    ```bash
+    pnpm install
+    # o
+    yarn install
+    ```
+
+3.  **Configurar variables de entorno:**
+    Crea un archivo `.env.dev` en la raíz del proyecto para la página de "Incrustar":
+    ```
+    # .env.development
+    VITE_BASE_URL=http://localhost:5173
+    ```
+
+4.  **Ejecutar el proyecto:**
+    ```bash
+    npm run dev
+    ```
+    Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+---
+
+## Despliegue
+
+Este proyecto está desplegado en **Vercel**. Vercel está conectado a la rama `main` de este repositorio.
+
+* **Despliegue automático:** Cada `git push` a la rama `main` dispara un nuevo despliegue.
+* **Variables de Entorno (Producción):** Para que el contador de visitas y la página de "Incrustar" funcionen en producción, es necesario configurar las variables de entorno de Vercel KV y `VITE_BASE_URL` en el panel de Vercel.
+
+---
+
+## Licencia
+
+Este proyecto está bajo la Licencia Apache 2.0. Ver el archivo [LICENSE](LICENSE) para más detalles.
