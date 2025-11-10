@@ -1,61 +1,55 @@
-# loadingVI - Contador Regresivo de GTA VI
+![Portada de loadingVI](https://loadingvi.vercel.app/og-image.webp)
 
-![Portada de loadingVI](https://loadingvi.com/og-image.webp)
 
-**[Visita la web en vivo 🚀](https://loadingvi.vercel.app)**
+`loadingVI` is a fan-made countdown timer dedicated to the highly anticipated release of **Grand Theft Auto VI**. The project was born out of the community's excitement and is optimised for sharing on social media and with tools for streamers.
 
-`loadingVI` es un contador regresivo *fan-made* dedicado al esperado lanzamiento de **Grand Theft Auto VI**. El proyecto nace de la emoción de la comunidad y está construido con un stack de tecnologías web modernas, optimizado para compartir en redes sociales y con herramientas para streamers.
 
----
 
-## Características (Features)
+## Features
 
-* **⏳ Contador Preciso:** Muestra los días, horas, minutos y segundos restantes.
-* **📊 Barra de Progreso:** Una barra de progreso animada que visualiza el tiempo transcurrido desde la salida de GTA V.
-* **📺 Herramienta para Streamers:** Una página de configuración que genera un `<iframe>` para que los streamers puedan incrustar el contador en sus directos de OBS, Twitch, etc.
-* **📲 Botones de Compartir:** Funcionalidad para compartir en X/Twitter, Facebook, WhatsApp y copiar el enlace.
-* **📈 Contador de Visitas:** Un contador de visitas en vivo usando Vercel KV.
+* **Accurate Counter:** Displays the remaining days, hours, minutes, and seconds.
+* **Progress Bar:** An animated progress bar that visualises the time elapsed since the release of GTA V.
+* **Streamer Tool:** A settings page that generates an `<iframe>` so streamers can embed the counter in their OBS, Twitch, etc. live streams.
+* **Share Buttons:** Functionality to share on X/Twitter, Facebook, WhatsApp and copy the link.
+* **Visitor Counter:** A live visitor counter using Vercel KV.
 
----
 
-## Stack Tecnológico
 
-Este proyecto está construido con:
+## Stack
 
-* **Framework:** [React](https://reactjs.org/)
-* **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
-* **Bundler:** [Vite](https://vitejs.dev/)
-* **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
-* **Routing:** [React Router](https://reactrouter.com/)
-* **SEO:** [React Helmet Async](https://github.com/staylor/react-helmet-async)
-* **Base de Datos (Contador):** [Vercel KV](https://vercel.com/storage/kv)
-* **Despliegue:** [Vercel](https://vercel.com/)
+Built with:
+
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=101010)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=101010)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=101010)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-06B6D4?style=for-the-badge&logo=vite&logoColor=white&labelColor=101010)](https://vite.dev/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=101010)](https://vercel.com/)
 
 ---
 
-## Cómo Ejecutarlo en Local
+## How to run it locally
 
-1.  **Clonar el repositorio:**
+1.  **Clone repository:**
     ```bash
     git clone [https://github.com/mariollesta/loadingVI.git](https://github.com/mariollesta/loadingVI.git)
     cd loadingVI
     ```
 
-2.  **Instalar dependencias:**
+2.  **Install dependencies:**
     ```bash
     pnpm install
     # o
     yarn install
     ```
 
-3.  **Configurar variables de entorno:**
+3.  **Set up environment variables:**
     Crea un archivo `.env.dev` en la raíz del proyecto para la página de "Incrustar":
     ```
     # .env.development
     VITE_BASE_URL=http://localhost:5173
     ```
 
-4.  **Ejecutar el proyecto:**
+4.  **Run:**
     ```bash
     npm run dev
     ```
@@ -63,15 +57,15 @@ Este proyecto está construido con:
 
 ---
 
-## Despliegue
+## Deploy
 
-Este proyecto está desplegado en **Vercel**. Vercel está conectado a la rama `main` de este repositorio.
+This project is deployed on **Vercel**. Vercel is connected to the `main` branch of this repository.
 
-* **Despliegue automático:** Cada `git push` a la rama `main` dispara un nuevo despliegue.
-* **Variables de Entorno (Producción):** Para que el contador de visitas y la página de "Incrustar" funcionen en producción, es necesario configurar las variables de entorno de Vercel KV y `VITE_BASE_URL` en el panel de Vercel.
+* **Automatic deployment:** Each `git push` to the `main` branch triggers a new deployment.
+* **Environment Variables (Production):** In order for the visitor counter and the ‘Embed’ page to work in production, it is necessary to configure the Vercel KV and `VITE_BASE_URL` environment variables in the Vercel panel.
 
 ---
 
-## Licencia
+## License
 
-Este proyecto está bajo la Licencia Apache 2.0. Ver el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the Apache Licence 2.0. See the [LICENCE](LICENCE) file for further details.
