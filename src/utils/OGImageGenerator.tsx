@@ -30,7 +30,7 @@ export const OGImageGenerator = () => {
                     letterSpacing: '-2px',  
                 }}
             >
-                LOADINGVI .com
+                loadingVI.com
             </h1>
         </div>
     )

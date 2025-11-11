@@ -7,7 +7,7 @@ export const CountdownEmbed = () => {
     if (total <= 0) {
         return (
             <div className="text-center px-2">
-                <h1 className="text-2xl md:text-3xl font-bold">🎮 GTA VI ¡YA ESTÁ AQUÍ! 🎮</h1>
+                <h1 className="text-2xl md:text-3xl">🎮 GTA VI ¡YA ESTÁ AQUÍ! 🎮</h1>
             </div>
         )
     }
@@ -16,9 +16,9 @@ export const CountdownEmbed = () => {
         <div className="text-center text-white w-full px-2">
         
             <h2 className="text-xl md:text-2xl mb-4">Lanzamiento GTA VI</h2>
-            <div className="grid grid-cols-4 gap-2 md:gap-4 max-w-2xl mx-auto">
+            <div className="grid grid-cols-4 gap-1 md:gap-2 max-w-2xl mx-auto">
                 <div className="flex flex-col items-center">
-                    <span className="text-3xl md:text-5xl font-bold text-gradient-gta">
+                    <span className="text-3xl md:text-5xl text-gradient-gta">
                         {days}
                     </span>
                     <span className="text-xs md:text-sm uppercase mt-1 opacity-70">
@@ -27,7 +27,7 @@ export const CountdownEmbed = () => {
                 </div>
                 
                 <div className="flex flex-col items-center">
-                    <span className="text-3xl md:text-5xl font-bold text-gradient-gta">
+                    <span className="text-3xl md:text-5xl text-gradient-gta">
                         {hours}
                     </span>
                     <span className="text-xs md:text-sm uppercase mt-1 opacity-70">

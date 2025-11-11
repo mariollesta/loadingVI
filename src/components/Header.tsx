@@ -26,7 +26,7 @@ export const Header = () => {
                     </Link>
                 
                     <a
-                        href="https://x.com/tu_usuario"
+                        href="https://x.com/loadingVI"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-[var(--color-gold)] transition-colors"
