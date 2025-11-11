@@ -1,4 +1,4 @@
-![Portada de loadingVI](https://loadingvi.vercel.app/og-image.webp)
+![Portada de loadingVI](https://loadingvi.com/og-image.webp)
 
 <div align="center">
   <i>
