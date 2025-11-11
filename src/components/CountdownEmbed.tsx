@@ -16,7 +16,7 @@ export const CountdownEmbed = () => {
         <div className="text-center text-white w-full px-2">
         
             <h2 className="text-xl md:text-2xl mb-4">Lanzamiento GTA VI</h2>
-            <div className="grid grid-cols-4 gap-1 md:gap-2 max-w-2xl mx-auto">
+            <div className="grid grid-cols-4 gap-1 max-w-xl mx-auto">
                 <div className="flex flex-col items-center">
                     <span className="text-3xl md:text-5xl text-gradient-gta">
                         {days}
