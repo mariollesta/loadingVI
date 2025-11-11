@@ -2,7 +2,7 @@
 
 <div align="center">
   <i>
-    fan-made countdown timer dedicated to the highly anticipated release of <strong>Grand Theft Auto VI</strong>. The project was born out of the community's excitement and is optimised for sharing on social media and with tools for streamers.
+    fan-made countdown timer dedicated to release of <strong>Grand Theft Auto VI</strong>
   </i>
 </div>
 
@@ -10,7 +10,7 @@
 
 ## Features
 
-* **Accurate Counter:** Displays the remaining days, hours, minutes, and seconds.
+* **Counter:** Displays the remaining days, hours, minutes, and seconds.
 * **Progress Bar:** An animated progress bar that visualises the time elapsed since the release of GTA V.
 * **Streamer Tool:** A settings page that generates an `<iframe>` so streamers can embed the counter in their OBS, Twitch, etc. live streams.
 * **Share Buttons:** Functionality to share on X/Twitter, Facebook, WhatsApp and copy the link.
