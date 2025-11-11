@@ -30,36 +30,6 @@ Built with:
 
 
 
-## How to run it locally
-
-1.  **Clone repository:**
-    ```bash
-    git clone [https://github.com/mariollesta/loadingVI.git](https://github.com/mariollesta/loadingVI.git)
-    cd loadingVI
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    pnpm install
-    # o
-    yarn install
-    ```
-
-3.  **Set up environment variables:**
-    Crea un archivo `.env.dev` en la raíz del proyecto para la página de "Incrustar":
-    ```
-    # .env.development
-    VITE_BASE_URL=http://localhost:5173
-    ```
-
-4.  **Run:**
-    ```bash
-    npm run dev
-    ```
-    Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
-
-
-
 ## Deploy
 
 This project is deployed on **Vercel**. Vercel is connected to the `main` branch of this repository.
