@@ -59,19 +59,19 @@ export const About = () => {
                         Este proyecto es de código abierto y está disponible en GitHub.
                     </p>
                 </div>
-                <div className="flex justify-center gap-4 mt-12 ">
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
                     <a
                         href="https://github.com/mariollesta/loadingVI"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-3 bg-[var(--color-purple)] text-white rounded-lg hover:bg-[var(--color-purple)] transition-colors font-semibold"
+                        className="w-full sm:w-auto text-center px-6 py-3 bg-[var(--color-purple)] text-white rounded-lg hover:opacity-90 transition-all font-semibold border-2 border-transparent"
                     >
                         Ver en GitHub
                     </a>
                     
                     <a
                         href="/"
-                        className="px-6 py-3 border-2 border-[var(--color-purple)] text-[var(--color-purple)] rounded-lg hover:bg-[var(--color-purple)] hover:text-white transition-all font-semibold"
+                        className="w-full sm:w-auto text-center px-6 py-3 border-2 border-[var(--color-purple)] text-[var(--color-purple)] rounded-lg hover:bg-[var(--color-purple)] hover:text-white transition-all font-semibold"
                     >
                         Volver al contador
                     </a>
